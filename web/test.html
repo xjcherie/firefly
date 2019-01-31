@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>上传资料</title>
+    <style>
+        .container {
+            width: 1200px;
+            background: #ffffff;
+            box-sizing: border-box;
+            margin: 0 auto;
+        }
+
+        table {
+            margin-top: 10px;
+            font-family: verdana, arial, sans-serif;
+            font-size: 11px;
+            color: #333333;
+            border-width: 1px;
+            border-color: #a9c6c9;
+            border-collapse: collapse;
+            width: 100%
+        }
+
+        table th {
+            background: #b5cfd2;
+            border-width: 1px;
+            padding: 5px;
+            border-style: solid;
+            border-color: #a9c6c9;
+        }
+
+        table td {
+            border-width: 1px;
+            padding: 5px;
+            border-style: solid;
+            border-color: #a9c6c9;
+        }
+
+    </style>
+</head>
+<body>
+<br>
+We have uploaded the final confirmation format.
+<br>
+<br>
+
+<div class="container">
+    <div id="content">
+        <table>
+            <tbody>
+            <tr>
+                <th>Pab account id</th>
+                <th>Master Account</th>
+                <th>Identifier</th>
+                <th>Total Number of Orders</th>
+                <th>Total Quantity</th>
+                <th>Last Upload Time</th>
+            </tr>
+            <#list ipoOrders as ipoOrder>
+            <tr>
+                <td>"${ipoOrder.pabAccountId}"</td>
+                <td>"${ipoOrder.masterAccount}"</td>
+                <td>"${ipoOrder.identifier}"</td>
+                <td>"${ipoOrder.totalOrderNumber}"</td>
+                <td>"${ipoOrder.totalQuantity}"</td>
+                <td>"${ipoOrder.lastUploadTime}"</td>
+            </tr>
+            #list>
+            <tr>
+                <td></td>
+                <td></td>
+                <td>TOTALS</td>
+                <td>"${totalOrderNumber}"</td>
+                <td>"${totalQuantity}"</td>
+                <td></td>
+            </tr>
+            </tbody>
+        </table>
+
+    </div>
+</div>
+<br>
+Thanks,<br>
+Cherie<br>
+</body>
+</html>

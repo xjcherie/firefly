@@ -1,0 +1,14 @@
+*.log
+.idea
+target
+*.iml
+.classpath
+.project
+.settings
+*.ucls
+*.ipr
+*.iws
+lib
+log
+logs
+*.DS_Store

@@ -5,7 +5,7 @@
     <modelVersion>4.0.0</modelVersion>
 
     <groupId>groupId</groupId>
-    <artifactId>feru</artifactId>
+    <artifactId>firefly</artifactId>
     <version>1.0-SNAPSHOT</version>
     <build>
         <plugins>

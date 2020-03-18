@@ -13,7 +13,8 @@ import java.nio.channels.FileChannel;
 public class Buffer {
 
     public static void main(String[] args) throws Exception {
-        FileInputStream fin = new FileInputStream(new File("/Users/Cherie/wjn/project/feru/src/main/java/demo.io/buffer.txt"));
+        FileInputStream fin = new FileInputStream(
+                new File("/Users/Cherie/wjn/project/firefly/src/main/java/demo/io/buffer.txt"));
         FileChannel fc = fin.getChannel();
         ByteBuffer byteBuffer = ByteBuffer.allocate(1024);
         fc.read(byteBuffer);

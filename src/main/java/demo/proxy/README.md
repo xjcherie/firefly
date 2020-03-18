@@ -32,6 +32,3 @@ CGLIB (Code Generation Library )是一个第三方代码生成类库，运行时
 4. JDK动态代理必须实现InvocationHandler接口，通过反射代理方法，比较消耗系统性能，但可以减少代理类的数量，使用更灵活。
 5. CGLIB代理无需实现接口，通过生成类字节码实现代理，比反射稍快，不存在性能问题
 6. CGLIB会继承目标对象，需要重写方法，所以目标对象不能为final类。
-
-### 参考
-https://www.jianshu.com/p/035bf096924b

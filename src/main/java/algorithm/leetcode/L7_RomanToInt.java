@@ -30,34 +30,32 @@ public class L7_RomanToInt {
 
     public int romanToInt2(String s) {
         int result = 0;
-        for (int i = 0; i < s.length(); i++) {
+        for (int i = 0; i < s.length() - 1; i++) {
             int num = getNum(s.charAt(i));
-            if (i < s.length() - 1) {
-                int nextNum = getNum(s.charAt(i + 1));
-                if (num < nextNum) {
-                    result += nextNum - num;
-                    i++;
-                    continue;
-                }
+            int nextNum = getNum(s.charAt(i + 1));
+            if (num < nextNum) {
+                result -= num;
+            } else {
+                result += num;
             }
-            result += num;
         }
+        result += getNum(s.charAt(s.length() - 1));
         return result;
     }
 
     private int getNum(char s) {
-        switch (String.valueOf(s)) {
-            case "I":
+        switch (s) {
+            case 'I':
                 return 1;
-            case "V":
+            case 'V':
                 return 5;
-            case "X":
+            case 'X':
                 return 10;
-            case "L":
+            case 'L':
                 return 50;
-            case "C":
+            case 'C':
                 return 100;
-            case "D":
+            case 'D':
                 return 500;
             default:
                 return 1000;

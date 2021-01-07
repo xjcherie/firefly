@@ -9,7 +9,7 @@ import org.springframework.web.client.RestTemplate;
 public class TencentLocationUtils {
 
     public static void main(String[] args) {
-        String KEY = "MKXBZ-WNL3W-MFPRL-R435G-YLTAE-ZHF4Z";
+        String KEY = "";
         String url = "https://apis.map.qq.com/ws/place/v1/search"
                 + "?key=" + KEY
                 + "&boundary=region(北京市,0)"

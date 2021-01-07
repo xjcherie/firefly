@@ -14,7 +14,7 @@ import com.tencentcloudapi.ocr.v20181119.models.GeneralBasicOCRResponse;
 public class TencentOCRUtils {
     public static void main(String[] args) {
         try {
-            Credential cred = new Credential("AKIDheOt748B1fAPN8hyhDake2D70dU3EM5H", "AGAMHwD8aolTw94uVMxHMPOFpAD0WN1V");
+            Credential cred = new Credential("", "");
 
             HttpProfile httpProfile = new HttpProfile();
             httpProfile.setEndpoint("ocr.tencentcloudapi.com");

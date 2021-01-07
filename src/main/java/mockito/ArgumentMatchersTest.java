@@ -8,7 +8,6 @@ import org.mockito.Mock;
 import org.mockito.junit.MockitoJUnitRunner;
 
 import java.util.ArrayList;
-import java.util.List;
 
 import static org.hamcrest.CoreMatchers.equalTo;
 import static org.hamcrest.CoreMatchers.nullValue;
@@ -28,7 +27,7 @@ public class ArgumentMatchersTest {
 
     @Test
     public void simpleTest() {
-        List<String> list = mock(ArrayList.class);
+        ArrayList list = mock(ArrayList.class);
 
         when(list.get(eq(0))).thenReturn("A");
         assertThat(list.get(0), equalTo("A"));

@@ -1,2 +1,1 @@
-# firefly
-Java learning and practicing
+# Java practice
